@@ -1,0 +1,1080 @@
+2022-06-21 18:07:45 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:07:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:07:49 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:07:53 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:09:46 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:09:47 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:09:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:09:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:11:45 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:11:47 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:11:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:11:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:13:45 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:13:47 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:13:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:13:52 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:15:45 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:15:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:15:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:15:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:17:46 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:17:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:17:54 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [信号灯超时时间已到]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+OSError: [WinError 121] 信号灯超时时间已到
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [信号灯超时时间已到]
+2022-06-21 18:17:57 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:19:45 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:19:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:19:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:19:53 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:21:46 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:21:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:21:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:21:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:23:46 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:23:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:23:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:23:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:25:45 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:25:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:25:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:25:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:27:46 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:27:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:27:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:27:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:29:45 monitor:ERROR - 全网IP代理爬虫爬取失败url: http://www.goubanjia.com, :e:'NoneType' object has no attribute 'find_all'
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 73, in do_crawl
+    tr_list = soup.find('tbody').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2022-06-21 18:29:46 monitor:ERROR - 免费代理IP爬虫爬取失败url: http://ip.jiangxianli.com/?page={}, :e:list index out of range
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 26, in crawl
+    temp = self.do_crawl(await resp.text())
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\spiders.py", line 409, in do_crawl
+    port = tds[1].text
+IndexError: list index out of range
+2022-06-21 18:29:48 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nn, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+2022-06-21 18:29:51 monitor:ERROR - 西刺IP代理爬虫爬取失败url: https://www.xicidaili.com/nt, :e:Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
+Traceback (most recent call last):
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 929, in _wrap_create_connection
+    await self._loop.create_connection(*args, **kwargs))
+  File "D:\conda\lib\asyncio\base_events.py", line 1025, in create_connection
+    raise exceptions[0]
+  File "D:\conda\lib\asyncio\base_events.py", line 1010, in create_connection
+    sock = await self._connect_sock(
+  File "D:\conda\lib\asyncio\base_events.py", line 924, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "D:\conda\lib\asyncio\proactor_events.py", line 702, in sock_connect
+    return await self._proactor.connect(sock, address)
+  File "D:\conda\lib\asyncio\windows_events.py", line 808, in _poll
+    value = callback(transferred, key, ov)
+  File "D:\conda\lib\asyncio\windows_events.py", line 595, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] 远程计算机拒绝网络连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Administrator\Desktop\math\ok_ip_proxy_pool-master\src\spider\abs_spider.py", line 24, in crawl
+    async with session.get(self.get_page_url(url, page), headers=HEADERS) as resp:
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 1013, in __aenter__
+    self._resp = await self._coro
+  File "D:\conda\lib\site-packages\aiohttp\client.py", line 481, in _request
+    conn = await self._connector.connect(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 858, in _create_connection
+    _, proto = await self._create_direct_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 997, in _create_direct_connection
+    raise last_exc
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 973, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "D:\conda\lib\site-packages\aiohttp\connector.py", line 936, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host www.xicidaili.com:443 ssl:None [远程计算机拒绝网络连接。]
